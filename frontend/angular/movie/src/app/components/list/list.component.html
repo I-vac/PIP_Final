@@ -1,0 +1,8 @@
+<div class="list-container">
+  <button (click)="getMovies()">Get Movies</button>
+  <ul>
+    <li routerLink="{{ movie.id }}" *ngFor="let movie of movies">{{ movie.title }} <img src="{{getPoster(movie)}}" /></li>
+  </ul>
+
+
+</div>

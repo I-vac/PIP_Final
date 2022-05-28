@@ -1,0 +1,9 @@
+<div *ngIf="movie">
+<h1>{{ movie.title }}</h1>
+<img src="{{getPoster()}}" />
+<h3>{{ movie.duration }}</h3>
+<h3>{{ movie.genre }}</h3>
+<h3>{{ movie.main_actor }}</h3>
+<img [src]="url"/>
+<app-file-upload></app-file-upload>
+</div>
