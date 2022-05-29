@@ -1,12 +1,19 @@
-img {
-  width: 300px;
-}
+// img {
+//   width: 300px;
+// }
 
 .example-card {
   max-width: 400px;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+// .example-header-image {
+//   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+//   background-size: cover;
+// }
+
+img{
+  height: 420px;
+  width: auto;
+  padding: 0px 70px 0px 70px ;
+ 
 }
