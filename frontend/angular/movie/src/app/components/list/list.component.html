@@ -2,10 +2,14 @@
   <button (click)="getMovies()">Get Movies</button>
 
   <mat-grid-list cols="4" rowHeight="1:1.5">
-  <mat-grid-tile routerLink="{{ movie.id }}" *ngFor="let movie of movies">
-    <img src="{{getPoster(movie)}}"/>
-    <p>{{ movie.title }}</p>
-    </mat-grid-tile>
+  
+    <mat-grid-tile routerLink="{{ movie.id }}" *ngFor="let movie of movies">
+      <div class="single_movie">
+      <img src="{{getPoster(movie)}}"/>
+      <p>{{ movie.title }}</p>
+    </div>  
+  </mat-grid-tile>
+  
 </mat-grid-list>
 </div>
 

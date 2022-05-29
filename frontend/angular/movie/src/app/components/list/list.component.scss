@@ -7,6 +7,18 @@ $light_brown: #FACC5F;
 mat-grid-tile {
   background: lightblue;
 }
+.single_movie{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+img{
+  height: 420px;
+  width: auto;
+}
+p{
+  display: block;
+}
 
 .list-container {
   width: 1200px;
@@ -33,21 +45,21 @@ mat-grid-tile {
     }
   }
 
-  ul {
+  // ul {
 
-    li {
-      list-style-type: none;
-      padding: 5px 10px;
-      transition: 200ms ease-in background-color;
-      color: whitesmoke;
-      text-decoration: none;
-      font-size: 20px;
+  //   li {
+  //     list-style-type: none;
+  //     padding: 5px 10px;
+  //     transition: 200ms ease-in background-color;
+  //     color: whitesmoke;
+  //     text-decoration: none;
+  //     font-size: 20px;
 
-      &:hover {
-        cursor: pointer;
-        background-color: $dark_blue;
-        transition: 200ms ease-in background-color;
-      }
-    }
-  }
+  //     &:hover {
+  //       cursor: pointer;
+  //       background-color: $dark_blue;
+  //       transition: 200ms ease-in background-color;
+  //     }
+  //   }
+  // }
 }
