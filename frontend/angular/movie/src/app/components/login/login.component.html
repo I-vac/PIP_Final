@@ -1,9 +1,26 @@
-<div class="form-container">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="./login.component.scss">
+</head>
+<body>
+<div class="login-form">
   <form>
-    <label>Username</label>
-    <input type="text" placeholder="Username"/>
-    <label>Password</label>
-    <input type="text" placeholder="Password"/>
-    <button (click)="login()">Login</button>
+    <h1>Login Page</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="Username" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" autocomplete="new-password">
+      </div>
+    </div>
+    <div class="action">
+      <button (click)="login()">Sign In</button>
+    </div>
   </form>
 </div>
+</body>
+</html>

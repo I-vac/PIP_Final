@@ -1,9 +1,17 @@
 <div *ngIf="movie">
-<h1>{{ movie.title }}</h1>
-<img src="{{getPoster()}}" />
-<h3>{{ movie.duration }}</h3>
-<h3>{{ movie.genre }}</h3>
-<h3>{{ movie.main_actor }}</h3>
-<img [src]="url"/>
-<app-file-upload></app-file-upload>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ movie.title }}</mat-card-title>
+    <mat-card-subtitle>Genre: {{ movie.genre }}</mat-card-subtitle>
+    <mat-card-subtitle>Duration: {{ movie.duration }}, Main Actor: {{ movie.main_actor }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{getPoster()}}" />
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+</mat-card>
 </div>

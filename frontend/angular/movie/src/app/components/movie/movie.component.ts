@@ -12,6 +12,8 @@ import { Byte } from '@angular/compiler/src/util';
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.scss']
 })
+
+
 export class MovieComponent {
   public url: SafeResourceUrl = "";
   public movie: any;

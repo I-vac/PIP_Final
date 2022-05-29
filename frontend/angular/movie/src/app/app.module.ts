@@ -11,6 +11,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {AuthguardService} from "./services/authguard.service";
 import {ReactiveFormsModule} from "@angular/forms";
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FileUploadComponent } from './components/file-upload/file-upload.compon
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatCardModule
     ],
   providers: [AuthguardService],
   bootstrap: [AppComponent]
