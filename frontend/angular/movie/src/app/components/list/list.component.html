@@ -1,8 +1,11 @@
 <div class="list-container">
   <button (click)="getMovies()">Get Movies</button>
-  <ul>
-    <li routerLink="{{ movie.id }}" *ngFor="let movie of movies">{{ movie.title }} <img src="{{getPoster(movie)}}" /></li>
-  </ul>
 
-
+  <mat-grid-list cols="4" rowHeight="1:1.5">
+  <mat-grid-tile routerLink="{{ movie.id }}" *ngFor="let movie of movies">
+    <img src="{{getPoster(movie)}}"/>
+    <p>{{ movie.title }}</p>
+    </mat-grid-tile>
+</mat-grid-list>
 </div>
+

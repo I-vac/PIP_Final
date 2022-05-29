@@ -13,6 +13,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import {MatCardModule} from "@angular/material/card";
     NotFoundComponent,
     FileUploadComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        ReactiveFormsModule,
-        BrowserAnimationsModule,
-        MatCardModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule
+  ],
   providers: [AuthguardService],
   bootstrap: [AppComponent]
 })
